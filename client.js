@@ -16,7 +16,9 @@ const connect = function() {
 
   conn.on("connect", () => {
     conn.write("Name: BKA");
+    
   });
+  
 
   conn.on("data", (data) => {
     console.log(data);
